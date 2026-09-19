@@ -1,4 +1,4 @@
-package filaCircularSimples;
+package FilaCircularSimples;
 import java.util.Scanner;
 
 public class MainCircularSimples

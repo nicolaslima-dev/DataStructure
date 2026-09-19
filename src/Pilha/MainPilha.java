@@ -1,3 +1,5 @@
+package Pilha;
+
 import java.util.Scanner;
 
 public class MainPilha

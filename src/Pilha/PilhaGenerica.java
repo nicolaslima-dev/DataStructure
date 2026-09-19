@@ -1,3 +1,5 @@
+package Pilha;
+
 import java.util.Vector;
 
 public class PilhaGenerica<T>
@@ -34,7 +36,7 @@ public class PilhaGenerica<T>
 		}
 		else
 		{
-			//Impressão para fins didáticos
+			//Impressï¿½o para fins didï¿½ticos
 			System.out.println("Pilha vazia: pop nao funcionou.");
 			return null;
 		}
@@ -49,7 +51,7 @@ public class PilhaGenerica<T>
 		}
 		else
 		{
-			//Impressão para fins didáticos
+			//Impressï¿½o para fins didï¿½ticos
 			System.out.println("Pilha cheia: push nao funcionou.\n");
 			return false;
 		}

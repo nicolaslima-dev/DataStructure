@@ -1,4 +1,4 @@
-package filaCircularDupla;
+package FilaCircularDupla;
 
 import java.util.Scanner;
 
