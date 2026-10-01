@@ -1,10 +1,10 @@
 package ExerciciosLista1;
 
-import java.util.Stack;
+
 
 public class Exercicio1 {
     public static boolean eFormaXCy(String cadeia) {
-        Stack<Character> pilha = new Stack<>();
+        Pilha pilha = new Pilha(cadeia.length());
         int i = 0;
         boolean encontrouC = false;
 
@@ -42,7 +42,7 @@ public class Exercicio1 {
             }
 
             // Se a pilha esvaziar antes do fim da string, y é maior que x
-            if (pilha.isEmpty()) {
+            if (pilha.vazia()) {
                 return false;
             }
 
@@ -55,7 +55,7 @@ public class Exercicio1 {
         }
 
         // Se a pilha terminou vazia, x e y possuem exatamente o mesmo tamanho
-        return pilha.isEmpty();
+        return pilha.vazia();
     }
 
     public static void main(String[] args) {

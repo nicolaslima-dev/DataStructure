@@ -3,15 +3,20 @@ package ExerciciosLista1;
 public class Exercicio3 {
 
     public static void main(String[] args) {
-        DuasPilhas pilhas = new DuasPilhas(10);
+        DuasPilhas pilhas = new DuasPilhas(6);
         pilhas.push1(10);
         pilhas.push1(20);
         pilhas.push1(30);
 
         pilhas.push2(100);
         pilhas.push2(200);
+        pilhas.push2(300);
 
         System.out.println("Retirando da Pilha 1: " + pilhas.pop1());
+        System.out.println("Retirando da Pilha 1: " + pilhas.pop1());
+        System.out.println("Retirando da Pilha 1: " + pilhas.pop1());
+        System.out.println("Retirando da Pilha 2: " + pilhas.pop2());
+        System.out.println("Retirando da Pilha 2: " + pilhas.pop2());
         System.out.println("Retirando da Pilha 2: " + pilhas.pop2());
     }
 

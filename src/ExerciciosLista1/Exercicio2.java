@@ -1,6 +1,6 @@
 package ExerciciosLista1;
 
-import java.util.Stack;
+
 
 public class Exercicio2 {
 
@@ -9,7 +9,7 @@ public class Exercicio2 {
                 return false;
             }
 
-            Stack<Character> pilha = new Stack<>();
+            Pilha pilha = new Pilha(cadeia.length());
             boolean lendoY = false;
             boolean encontrouCNoSegmento = false;
 
@@ -20,7 +20,7 @@ public class Exercicio2 {
                 if (c == 'D') {
                     // O bloco xCy anterior precisa ter sido totalmente válido
                     // precisa ter passado por 'C' e a pilha deve estar vazia
-                    if (!encontrouCNoSegmento || !pilha.isEmpty()) {
+                    if (!encontrouCNoSegmento || !pilha.vazia()) {
                         return false;
                     }
                     // Prepara as variáveis para o próximo bloco xCy
@@ -45,7 +45,7 @@ public class Exercicio2 {
                     if (c != 'A' && c != 'B') {
                         return false; // Caractere inválido
                     }
-                    if (pilha.isEmpty()) {
+                    if (pilha.vazia()) {
                         return false; // y tem mais elementos que x
                     }
                     if (pilha.pop() != c) {
@@ -55,7 +55,7 @@ public class Exercicio2 {
             }
 
             // 4. Verificação final do último bloco
-            return encontrouCNoSegmento && pilha.isEmpty();
+            return encontrouCNoSegmento && pilha.vazia();
         }
 
         public static void main(String[] args) {
